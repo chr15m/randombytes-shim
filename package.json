@@ -1,6 +1,6 @@
 {
   "name": "randombytes-shim",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Tiny shim for randomBytes for browsers.",
   "author": "Chris McCormick <chris@mccormick.cx>",
   "homepage": "https://github.com/chr15m/randombytes-shim",
@@ -24,8 +24,5 @@
   },
   "scripts": {
     "build": "browserify --exclude crypto -s randombytes-shim -e ./ | minify > randombytes-shim.min.js"
-  },
-  "dependencies": {
-    "airtap": "^0.1.0"
   }
 }
