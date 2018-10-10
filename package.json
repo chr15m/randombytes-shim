@@ -23,6 +23,7 @@
     "tape": "^4.9.1"
   },
   "scripts": {
-    "build": "browserify --exclude crypto -s randombytes-shim -e ./ | minify > randombytes-shim.min.js"
+    "build": "browserify --exclude crypto -s randombytes-shim -e ./ | minify > randombytes-shim.min.js",
+    "test": "tape test.js"
   }
 }
